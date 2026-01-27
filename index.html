@@ -27,8 +27,8 @@
             class="hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 bg-white shadow-sm bg-opacity-50 font-Ovo dark:border dark:border-white/30 dark:bg-transparent ">
             <li><a class='hover:text-gray-500 dark:hover:text-gray-300 transition' href="#top">Home</a></li>
             <li><a class='hover:text-gray-500 dark:hover:text-gray-300 transition' href="#about">About me</a></li>
-            <li><a class='hover:text-gray-500 dark:hover:text-gray-300 transition' href="#services">Services</a></li>
-            <li><a class='hover:text-gray-500 dark:hover:text-gray-300 transition' href="#work">My Work</a></li>
+            <li><a class='hover:text-gray-500 dark:hover:text-gray-300 transition' href="#experience">Experience</a></li>
+            <li><a class='hover:text-gray-500 dark:hover:text-gray-300 transition' href="#work">Projects</a></li>
             <li><a class='hover:text-gray-500 dark:hover:text-gray-300 transition' href="#contact">Contact me</a></li>
         </ul>
 
@@ -62,8 +62,8 @@
 
             <li><a href="#top" onclick="closeMenu()">Home</a></li>
             <li><a href="#about" onclick="closeMenu()">About me</a></li>
-            <li><a href="#services" onclick="closeMenu()">Services</a></li>
-            <li><a href="#work" onclick="closeMenu()">My Work</a></li>
+            <li><a href="#experience" onclick="closeMenu()">Experience</a></li>
+            <li><a href="#work" onclick="closeMenu()">Projects</a></li>
             <li><a href="#contact" onclick="closeMenu()">Contact me</a></li>
         </ul>
     </nav>
@@ -71,16 +71,18 @@
     <!-- ----- home section ------ -->
     <div class="w-11/12 max-w-2xl text-center mx-auto h-screen flex flex-col items-center justify-center gap-4">
         <img src="./assets/profile-img.png" alt="" class="rounded-full w-32" />
-        <h3 class="flex items-end gap-2 text-md mb-3 font-Ovo">
+        <h3 class="flex items-end gap-2 text-md font-Ovo border border-gray-300 rounded-full px-3">
             based in Kerala, India - open to relocate
         </h3>
-        <h1 class="text-3xl sm:text-6xl lg:text-[66px] font-Ovo">Hi! I&apos;m Nizamudheen Punnoli - full stack developer
+        <h1 class="text-3xl sm:text-6xl lg:text-[66px] font-Ovo">Hi! I&apos;m Nizamudheen
+            <br>
+            full stack developer
         </h1>
         <p class="max-w-2xl font-Ovo">Passionate about building responsive and user-friendly web applications
             using JavaScript, React.js, Node.js, Express, MongoDB, and Tailwind CSS. With 6 months of hands-on
-            experience, I focus on clean UI, basic performance, and writing readable, maintainable code while
+            experience, I focus on clean UI, performance, and writing readable, maintainable code while
             continuously improving my full-stack development skills.</p>
-        <div class="flex flex-col sm:flex-row items-center gap-4 mt-4">
+        <div class="flex flex-col sm:flex-row items-center gap-4 mt-3">
             <a href="#contact"
                 class="px-10 py-2.5 border rounded-full bg-gradient-to-r from-[#b820e6] to-[#da7d20] text-white flex items-center gap-2 dark:border-transparent">
                 contact me <img src="./assets/right-arrow-white.png" alt="" class="w-4" />
@@ -96,34 +98,31 @@
     <!-- ----- about me section ------ -->
     <div id="about" class="w-full px-[12%] py-10 scroll-mt-20">
         <h2 class="text-center text-5xl font-Ovo">About me</h2>
-        <div class="flex w-full flex-col items-center gap-20 my-10">
-            <div class="flex-1">
-                <div class="mb-10 max-w-2xl font-Ovo ">
-                    <p>My name is nizamudheen punnoli, and I am a web developer with 6 months of
-                        hands-on experience building responsive and user-friendly web applications. I enjoy working with
-                        JavaScript, React.js, and Tailwind CSS to create clean, simple, and functional user interfaces
-                        that
-                        provide a good user experience.
-                    </p>
-                    <p> Along with frontend development, I have practical experience in Node.js, Express, and MongoDB,
-                        which
-                        allows me to understand and work on full-stack features when required. I like connecting
-                        frontend
-                        interfaces with backend APIs and learning how real-world applications are built end to end.
-                    </p>
+        <div class="flex w-full flex-col items-center font-Ovo gap-2 my-10">
 
-                    <p> I have worked on personal projects and practice applications that focus on performance,
-                        responsiveness, and clean code. Writing readable code, improving my problem-solving skills, and
-                        learning modern web development practices motivate me to grow as a developer every day.
-                    </p>
-                    <p>Outside of coding, I enjoy learning new technologies, exploring developer content, and
-                        continuously
-                        improving my skills. I am looking for opportunities where I can learn, contribute, and grow
-                        while
-                        building meaningful products with a good team.
-                    </p>
-                </div>
-            </div>
+            <p>My name is nizamudheen punnoli, and I am a web developer with 6 months of
+                hands-on experience building responsive and user-friendly web applications. I enjoy working with
+                JavaScript, React.js, and Tailwind CSS to create clean, simple, and functional user interfaces
+                that
+                provide a good user experience.
+            </p>
+            <p> Along with frontend development, I have practical experience in Node.js, Express, and MongoDB,
+                which
+                allows me to understand and work on full-stack features when required. I like connecting
+                frontend
+                interfaces with backend APIs and learning how real-world applications are built end to end.
+            </p>
+
+            <p> I have worked on personal projects and practice applications that focus on performance,
+                responsiveness, and clean code. Writing readable code, improving my problem-solving skills, and
+                learning modern web development practices motivate me to grow as a developer every day.
+            </p>
+            <p>Outside of coding, I enjoy learning new technologies, exploring developer content, and
+                continuously
+                improving my skills. I am looking for opportunities where I can learn, contribute, and grow
+                while
+                building meaningful products with a good team.
+            </p>
         </div>
     </div>
 
@@ -252,7 +251,7 @@
     </div>
 
 
-    <div id="about" class="w-full px-[12%] py-10 scroll-mt-20">
+    <div id="experience" class="w-full px-[12%] mt-10 py-10 scroll-mt-20">
         <h2 class="text-center text-5xl font-Ovo">My experience</h2>
         <div class="flex flex-col mt-5 gap-3">
             <div class="flex gap-2 text-xl">
