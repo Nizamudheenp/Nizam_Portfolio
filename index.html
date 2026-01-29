@@ -27,7 +27,8 @@
             class="hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 bg-white shadow-sm bg-opacity-50 font-Ovo dark:border dark:border-white/30 dark:bg-transparent ">
             <li><a class='hover:text-gray-500 dark:hover:text-gray-300 transition' href="#top">Home</a></li>
             <li><a class='hover:text-gray-500 dark:hover:text-gray-300 transition' href="#about">About me</a></li>
-            <li><a class='hover:text-gray-500 dark:hover:text-gray-300 transition' href="#experience">Experience</a></li>
+            <li><a class='hover:text-gray-500 dark:hover:text-gray-300 transition' href="#experience">Experience</a>
+            </li>
             <li><a class='hover:text-gray-500 dark:hover:text-gray-300 transition' href="#work">Projects</a></li>
             <li><a class='hover:text-gray-500 dark:hover:text-gray-300 transition' href="#contact">Contact me</a></li>
         </ul>
@@ -127,7 +128,7 @@
     </div>
 
     <!--Marquee -->
-    <div class="w-full overflow-hidden bg-gray-100 dark:bg-darkTheme py-6">
+    <div class="w-full px-[7%] overflow-hidden bg-gray-100 dark:bg-darkTheme py-6">
         <div class="marquee relative">
             <div class="marquee-track flex items-center gap-10">
                 <div class="marquee-content flex items-center gap-10">
@@ -269,13 +270,13 @@
                 integrating a project collaboration system like ColabX. This role involved close teamwork and delivering
                 a polished, user-friendly digital platform.</p>
             <div class="flex gap-2 tex-center">
-                <p class="rounded-full px-3 border border-gray-300">React.js</p>
-                <p class="rounded-full px-3 border border-gray-300">Javascript</p>
-                <p class="rounded-full px-3 border border-gray-300">Tailwind CSS</p>
-                <p class="rounded-full px-3 border border-gray-300">Node.js</p>
-                <p class="rounded-full px-3 border border-gray-300">Express</p>
-                <p class="rounded-full px-3 border border-gray-300">MongoDB</p>
-                <p class="rounded-full px-3 border border-gray-300">TypeScript</p>
+                <p class="rounded-full px-3 border border-gray-800">React.js</p>
+                <p class="rounded-full px-3 border border-gray-800">Javascript</p>
+                <p class="rounded-full px-3 border border-gray-800">Tailwind CSS</p>
+                <p class="rounded-full px-3 border border-gray-800">Node.js</p>
+                <p class="rounded-full px-3 border border-gray-800">Express</p>
+                <p class="rounded-full px-3 border border-gray-800">MongoDB</p>
+                <p class="rounded-full px-3 border border-gray-800">TypeScript</p>
             </div>
         </div>
     </div>
@@ -286,66 +287,131 @@
         <h2 class="text-center text-5xl font-Ovo">My Projects</h2>
         <p class="text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo">Welcome to my web development portfolio! Explore a
             collection of projects showcasing my expertise in full-stack development.</p>
-        <div class="grid grid-cols-auto my-10 gap-5 dark:text-black">
-            <div class="aspect-square bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group"
-                style="background-image: url('./assets/work-1.png');">
-                <div
-                    class="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
-                    <div>
-                        <h2 class="font-semibold">Frontend project</h2>
-                        <p class="text-sm text-gray-700">Web Design</p>
-                    </div>
-                    <div
-                        class="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition">
-                        <img src="./assets/send-icon.png" alt="" class="w-5">
-                    </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 my-10 gap-5 dark:text-black">
+            <!-- projects -->
+            <div class="border border-gray-800 rounded-md flex flex-col p-5 gap-2 text-black dark:text-white">
+                <div class="w-full h-[300px] flex items-center justify-center rounded-md">
+                    <img src="./assets/work-1.png"
+                        class="max-h-full max-w-full rounded-md transition-transform duration-300 ease-out hover:scale-105">
                 </div>
-            </div>
-            <div class="aspect-square bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group"
-                style="background-image: url('./assets/work-2.png');">
-                <div
-                    class="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
-                    <div>
-                        <h2 class="font-semibold">Geo based app</h2>
-                        <p class="text-sm text-gray-700">mobile app</p>
-                    </div>
-                    <div
-                        class="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition">
-                        <img src="./assets/send-icon.png" alt="" class="w-5">
-                    </div>
+                <h1 class="text-2xl">Gym Management System (GYFIT)</h1>
+                <p class="text-gray-900 dark:text-gray-300">The GyFit Gym Management System is designed to streamline
+                    gym operations
+                    by integrating features like
+                    authentication, fitness and nutrition tracking, session booking, and payment management. It enhances
+                    user experience by allowing real-time chatting, detailed progression tracking, and training session
+                    reviews. With a role-based access control (RBAC) model, it ensures tailored experiences for gym
+                    members, trainers, and administrators, making gym management efficient and user-friendly.</p>
+                <div class="flex gap-2 tex-center flex-wrap">
+                    <p class="rounded-full px-3 border border-gray-800">React.js</p>
+                    <p class="rounded-full px-3 border border-gray-800">Javascript</p>
+                    <p class="rounded-full px-3 border border-gray-800">Bootstrap</p>
+                    <p class="rounded-full px-3 border border-gray-800">Node.js</p>
+                    <p class="rounded-full px-3 border border-gray-800">Express</p>
+                    <p class="rounded-full px-3 border border-gray-800">MongoDB</p>
+                    <p class="rounded-full px-3 border border-gray-800">Stripe</p>
+                    <p class="rounded-full px-3 border border-gray-800">Socket.IO</p>
+                    <p class="rounded-full px-3 border border-gray-800">Cloudinary</p>
                 </div>
+                <a href="https://gymmanagerfrontend.vercel.app"
+                    class=" w-[50%] mx-auto mt-3 flex items-center justify-center rounded-full px-3 border border-gray-500 gap-2 transition-transform duration-500 ease-out hover:scale-105">
+                    <img src="./assets/send-icon.png" alt="" class="w-5 h-5 ">
+                    preview
+                </a>
+
             </div>
-            <div class="aspect-square bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group"
-                style="background-image: url('./assets/work-3.png');">
-                <div
-                    class="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
-                    <div>
-                        <h2 class="font-semibold">Photography site</h2>
-                        <p class="text-sm text-gray-700">Web Design</p>
-                    </div>
-                    <div
-                        class="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition">
-                        <img src="./assets/send-icon.png" alt="" class="w-5">
-                    </div>
+            <div class="border border-gray-800 rounded-md flex flex-col p-5 gap-2 text-black dark:text-white">
+                <div class="w-full h-[300px] flex items-center justify-center rounded-md">
+                    <img src="./assets/work-2.png"
+                        class="max-h-full max-w-full rounded-md transition-transform duration-300 ease-out hover:scale-105">
                 </div>
-            </div>
-            <div class="aspect-square bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group"
-                style="background-image: url('./assets/work-4.png');">
-                <div
-                    class="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
-                    <div>
-                        <h2 class="font-semibold">UI/UX designing</h2>
-                        <p class="text-sm text-gray-700">UI/UX Design</p>
-                    </div>
-                    <div
-                        class="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition">
-                        <img src="./assets/send-icon.png" alt="" class="w-5">
-                    </div>
+                <h1 class="text-2xl">Project Collaboration Tool (Collabix)</h1>
+                <p class="text-gray-900 dark:text-gray-300">ColabiX is a dynamic project collaboration platform designed
+                    to foster seamless teamwork. It
+                    enables project creation, task management, and a Kanban-style board for tracking progress and
+                    deadlines. The platform supports real-time communication, allowing team leads, admins, and
+                    collaborators to interact instantly. With robust features like task assignments, progress tracking,
+                    and collaborative tools, ColabiX ensures that teams stay organized and productive.</p>
+                <div class="flex gap-2 tex-center flex-wrap">
+                    <p class="rounded-full px-3 border border-gray-800">Javascript</p>
+                    <p class="rounded-full px-3 border border-gray-800">framer-motion</p>
+                    <p class="rounded-full px-3 border border-gray-800">Tailwind CSS</p>
+                    <p class="rounded-full px-3 border border-gray-800">Jspdf</p>
+                    <p class="rounded-full px-3 border border-gray-800">Node.js</p>
+                    <p class="rounded-full px-3 border border-gray-800">Socket.IO</p>
+                    <p class="rounded-full px-3 border border-gray-800">Sonner</p>
+                    <p class="rounded-full px-3 border border-gray-800">MongoDB</p>
+                    <p class="rounded-full px-3 border border-gray-800">Hello-pangea/dnd</p>
                 </div>
+                <a href="https://collabix.vercel.app"
+                    class=" w-[50%] mx-auto mt-3 flex items-center justify-center rounded-full px-3 border border-gray-500 gap-2 transition-transform duration-500 ease-out hover:scale-105">
+                    <img src="./assets/send-icon.png" alt="" class="w-5 h-5 ">
+                    preview
+                </a>
             </div>
+            <div class="border border-gray-800 rounded-md flex flex-col p-5 gap-2 text-black dark:text-white">
+                <div class="w-full h-[300px] flex items-center justify-center rounded-md">
+                    <img src="./assets/work-3.png"
+                        class="max-h-full max-w-full rounded-md transition-transform duration-300 ease-out hover:scale-105">
+                </div>
+                <h1 class="text-2xl">Dream Analyzing System(ReverieOS)</h1>
+                <p class="text-gray-900 dark:text-gray-300">ReverieOS is an innovative AI-powered dream-operating system
+                    designed to explore and analyze the intricate patterns of the subconscious mind. By capturing and
+                    interpreting dreams, emotions, and reflective patterns, ReverieOS leverages advanced AI analytics
+                    tools to provide users with deep insights into their inner world. The platform helps users reflect,
+                    grow, and understand the hidden meanings behind their dreams, creating a peaceful and introspective
+                    AI-driven environment.
+                </p>
+                <div class="flex gap-2 tex-center flex-wrap">
+                    <p class="rounded-full px-3 border border-gray-800">Next.js</p>
+                    <p class="rounded-full px-3 border border-gray-800">Javascript</p>
+                    <p class="rounded-full px-3 border border-gray-800">Lightningcss</p>
+                    <p class="rounded-full px-3 border border-gray-800">Groq-AI</p>
+                    <p class="rounded-full px-3 border border-gray-800">Recharts</p>
+                    <p class="rounded-full px-3 border border-gray-800">Google Auth</p>
+                    <p class="rounded-full px-3 border border-gray-800">AI</p>
+                    <p class="rounded-full px-3 border border-gray-800">CI/CD</p>
+                    <p class="rounded-full px-3 border border-gray-800">Lucid-React</p>
+                </div>
+                <a href="https://reverieos.vercel.app"
+                    class=" w-[50%] mx-auto mt-3 flex items-center justify-center rounded-full px-3 border border-gray-500 gap-2 transition-transform duration-500 ease-out hover:scale-105">
+                    <img src="./assets/send-icon.png" alt="" class="w-5 h-5 ">
+                    preview
+                </a>
+            </div>
+            <div class="border border-gray-800 rounded-md flex flex-col p-5 gap-2 text-black dark:text-white">
+                <div class="w-full h-[300px] flex items-center justify-center rounded-md">
+                    <img src="./assets/work-4.png"
+                        class="max-h-full max-w-full rounded-md transition-transform duration-300 ease-out hover:scale-105">
+                </div>
+                <h1 class="text-2xl">E-Commerce (TicTic)</h1>
+                <p class="text-gray-900 dark:text-gray-300"> TicTic is a vibrant e-commerce platform tailored for kids'
+                    items, offering a delightful range of toys, crafts, customized nameslips and educational materials.
+                    With a user-friendly
+                    interface and secure payment system, TicTic ensures a fun and secure shopping experience for both
+                    parents and children, making
+                    it easy to discover and purchase quality kids' products. The platform is designed to create a joyful
+                    and engaging environment, ensuring that each purchase is a memorable experience.</p>
+                <div class="flex gap-2 tex-center flex-wrap">
+                    <p class="rounded-full px-3 border border-gray-800">React.js</p>
+                    <p class="rounded-full px-3 border border-gray-800">framer-motion</p>
+                    <p class="rounded-full px-3 border border-gray-800">Tailwind CSS</p>
+                    <p class="rounded-full px-3 border border-gray-800">Node.js</p>
+                    <p class="rounded-full px-3 border border-gray-800">Bcrypt.js</p>
+                    <p class="rounded-full px-3 border border-gray-800">Express</p>
+                    <p class="rounded-full px-3 border border-gray-800">MongoDB</p>
+                    <p class="rounded-full px-3 border border-gray-800">JWT</p>
+                </div>
+                <a href="https://tictic-official.vercel.app"
+                    class=" w-[50%] mx-auto mt-3 flex items-center justify-center rounded-full px-3 border border-gray-500 gap-2 transition-transform duration-500 ease-out hover:scale-105">
+                    <img src="./assets/send-icon.png" alt="" class="w-5 h-5 ">
+                    preview
+                </a>
+            </div>
+
         </div>
         <a href="#"
-            class="w-max flex items-center justify-center gap-2 text-gray-700 border border-gray-300 dark:border-white/25 hover:bg-slate-100/70 dark:hover:bg-darkHover rounded-full py-2 px-8 mx-auto my-20 duration-300 dark:text-white">
+            class="w-max flex items-center justify-center gap-2 text-gray-700 border border-gray-300 dark:border-white/25 hover:bg-slate-100/70 dark:hover:bg-darkHover rounded-full py-2 px-8 mx-auto my-10 duration-300 dark:text-white">
             Show more
             <img src="./assets/right-arrow-bold.png" alt="" class="w-4 dark:hidden"><img
                 src="./assets/right-arrow-bold-dark.png" alt="" class="w-4 hidden dark:block"></a>
