@@ -29,8 +29,8 @@
             <li><a class='hover:text-gray-500 dark:hover:text-gray-300 transition' href="#about">About me</a></li>
             <li><a class='hover:text-gray-500 dark:hover:text-gray-300 transition' href="#experience">Experience</a>
             </li>
+            <li><a class='hover:text-gray-500 dark:hover:text-gray-300 transition' href="#education">Education</a></li>
             <li><a class='hover:text-gray-500 dark:hover:text-gray-300 transition' href="#work">Projects</a></li>
-            <li><a class='hover:text-gray-500 dark:hover:text-gray-300 transition' href="#contact">Contact me</a></li>
         </ul>
 
         <div class="flex items-center gap-4">
@@ -64,8 +64,8 @@
             <li><a href="#top" onclick="closeMenu()">Home</a></li>
             <li><a href="#about" onclick="closeMenu()">About me</a></li>
             <li><a href="#experience" onclick="closeMenu()">Experience</a></li>
+            <li><a href="#education" onclick="closeMenu()">Education</a></li>
             <li><a href="#work" onclick="closeMenu()">Projects</a></li>
-            <li><a href="#contact" onclick="closeMenu()">Contact me</a></li>
         </ul>
     </nav>
 
@@ -75,9 +75,10 @@
         <h3 class="flex items-end gap-2 text-md font-Ovo border border-gray-300 rounded-full px-3">
             based in Kerala, India - open to relocate
         </h3>
-        <h1 class="text-3xl sm:text-6xl lg:text-[66px] font-Ovo">Hi! I&apos;m Nizamudheen
+        <h1 class="text-3xl sm:text-6xl lg:text-[66px] font-Ovo">Hi! I&apos;m <span class="text-[#da7d20]">Nizamudheen
+            </span>
             <br>
-            full stack developer
+            <span class="text-2xl sm:text-4xl lg:text-[50px] "> Full-Stack Developer</span>
         </h1>
         <p class="max-w-2xl font-Ovo">Passionate about building responsive and user-friendly web applications
             using JavaScript, React.js, Node.js, Express, MongoDB, and Tailwind CSS. With 6 months of hands-on
@@ -251,6 +252,7 @@
         </div>
     </div>
 
+    <!-- my experience -->
 
     <div id="experience" class="w-full px-[12%] mt-10 py-10 scroll-mt-20">
         <h2 class="text-center text-5xl font-Ovo">My experience</h2>
@@ -269,7 +271,7 @@
                 Invested significant hours in development, creating an admin panel with CRUD functionalities and
                 integrating a project collaboration system like ColabX. This role involved close teamwork and delivering
                 a polished, user-friendly digital platform.</p>
-            <div class="flex gap-2 tex-center">
+            <div class="flex gap-2 tex-center flex-wrap ">
                 <p class="rounded-full px-3 border border-gray-800">React.js</p>
                 <p class="rounded-full px-3 border border-gray-800">Javascript</p>
                 <p class="rounded-full px-3 border border-gray-800">Tailwind CSS</p>
@@ -278,6 +280,39 @@
                 <p class="rounded-full px-3 border border-gray-800">MongoDB</p>
                 <p class="rounded-full px-3 border border-gray-800">TypeScript</p>
             </div>
+        </div>
+    </div>
+
+    <!-- my education -->
+
+    <div id="education" class="w-full px-[12%] mt-10 py-10 scroll-mt-20">
+        <h2 class="text-center text-5xl mb-10 font-Ovo">My education</h2>
+        <div class="relative border-l-4 border-gray-500">
+
+            <div class="mb-10 ml-6 relative">
+                <span class="absolute -left-8 w-3 h-3 bg-gray-900 dark:bg-gray-100 rounded-full"></span>
+
+                <h3 class="text-xl font-semibold">Full-Stack Development</h3>
+                <p class="text-gray-500">Entri • 2024 - 2025</p>
+
+            </div>
+
+            <div class="mb-10 ml-6 relative">
+                <span class="absolute -left-8 w-3 h-3 bg-gray-900 dark:bg-gray-100 rounded-full"></span>
+
+                <h3 class="text-xl font-semibold">PG Diploma in Computer Applications</h3>
+                <p class="text-gray-500">C-Dit • 2023 - 2024</p>
+
+            </div>
+
+            <div class="mb-10 ml-6 relative">
+                <span class="absolute -left-8 w-3 h-3 bg-gray-900 dark:bg-gray-100 rounded-full"></span>
+
+                <h3 class="text-xl font-semibold">BA Sociology</h3>
+                <p class="text-gray-500">University of Calicut • 2020 - 2023</p>
+
+            </div>
+
         </div>
     </div>
 
@@ -290,11 +325,11 @@
         <div class="grid grid-cols-1 md:grid-cols-2 my-10 gap-5 dark:text-black">
             <!-- projects -->
             <div class="border border-gray-800 rounded-md flex flex-col p-5 gap-2 text-black dark:text-white">
-                <div class="w-full h-[300px] flex items-center justify-center rounded-md">
+                <div class="w-full flex items-center justify-center rounded-md">
                     <img src="./assets/work-1.png"
                         class="max-h-full max-w-full rounded-md transition-transform duration-300 ease-out hover:scale-105">
                 </div>
-                <h1 class="text-2xl">Gym Management System (GYFIT)</h1>
+                <h1 class="text-2xl mt-2">Gym Management System (GYFIT)</h1>
                 <p class="text-gray-900 dark:text-gray-300">The GyFit Gym Management System is designed to streamline
                     gym operations
                     by integrating features like
@@ -321,11 +356,11 @@
 
             </div>
             <div class="border border-gray-800 rounded-md flex flex-col p-5 gap-2 text-black dark:text-white">
-                <div class="w-full h-[300px] flex items-center justify-center rounded-md">
+                <div class="w-full  flex items-center justify-center rounded-md">
                     <img src="./assets/work-2.png"
                         class="max-h-full max-w-full rounded-md transition-transform duration-300 ease-out hover:scale-105">
                 </div>
-                <h1 class="text-2xl">Project Collaboration Tool (Collabix)</h1>
+                <h1 class="text-2xl mt-2">Project Collaboration Tool (Collabix)</h1>
                 <p class="text-gray-900 dark:text-gray-300">ColabiX is a dynamic project collaboration platform designed
                     to foster seamless teamwork. It
                     enables project creation, task management, and a Kanban-style board for tracking progress and
@@ -350,11 +385,11 @@
                 </a>
             </div>
             <div class="border border-gray-800 rounded-md flex flex-col p-5 gap-2 text-black dark:text-white">
-                <div class="w-full h-[300px] flex items-center justify-center rounded-md">
+                <div class="w-full  flex items-center justify-center rounded-md">
                     <img src="./assets/work-3.png"
                         class="max-h-full max-w-full rounded-md transition-transform duration-300 ease-out hover:scale-105">
                 </div>
-                <h1 class="text-2xl">Dream Analyzing System(ReverieOS)</h1>
+                <h1 class="text-2xl mt-2">Dream Analyzing System(ReverieOS)</h1>
                 <p class="text-gray-900 dark:text-gray-300">ReverieOS is an innovative AI-powered dream-operating system
                     designed to explore and analyze the intricate patterns of the subconscious mind. By capturing and
                     interpreting dreams, emotions, and reflective patterns, ReverieOS leverages advanced AI analytics
@@ -380,11 +415,11 @@
                 </a>
             </div>
             <div class="border border-gray-800 rounded-md flex flex-col p-5 gap-2 text-black dark:text-white">
-                <div class="w-full h-[300px] flex items-center justify-center rounded-md">
+                <div class="w-full  flex items-center justify-center rounded-md">
                     <img src="./assets/work-4.png"
                         class="max-h-full max-w-full rounded-md transition-transform duration-300 ease-out hover:scale-105">
                 </div>
-                <h1 class="text-2xl">E-Commerce (TicTic)</h1>
+                <h1 class="text-2xl mt-2">E-Commerce (TicTic)</h1>
                 <p class="text-gray-900 dark:text-gray-300"> TicTic is a vibrant e-commerce platform tailored for kids'
                     items, offering a delightful range of toys, crafts, customized nameslips and educational materials.
                     With a user-friendly
@@ -422,8 +457,8 @@
         class="w-full px-[12%] py-10 scroll-mt-20 bg-[url('./assets/footer-bg-color.png')] bg-no-repeat bg-[length:90%_auto] bg-center dark:bg-none">
         <h4 class="text-center mb-2 text-lg font-Ovo">Connect with me</h4>
         <h2 class="text-center text-5xl font-Ovo">Get in touch</h2>
-        <p class="text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo">I'd love to hear from you! If you have any
-            questions, comments or feedback, please use the form below.
+        <p class="text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo">Please contact me directly at <span
+                class="font-bold"> nizampnizam7@gmail.com </span> or through this form.
         </p>
         <form class="max-w-2xl mx-auto">
             <input type="hidden" name="subject" value="Eliana Jade - New form Submission">

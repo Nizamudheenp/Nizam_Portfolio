@@ -10,7 +10,7 @@ html {
 .marquee-track {
   display: flex;
   width: max-content;
-  animation: marquee 25s linear infinite;
+  animation: marquee 30s linear infinite;
 }
 @keyframes marquee {
   from {
