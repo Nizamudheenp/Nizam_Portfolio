@@ -36,3 +36,19 @@ window.addEventListener('scroll', () => {
         navLink.classList.add('bg-white', 'shadow-sm', 'bg-opacity-50', 'dark:border', 'dark:border-white/30', "dark:bg-transparent");
     }
 })
+
+document.getElementById('contactForm').addEventListener('submit', function (e) {
+
+    e.preventDefault();
+
+    const subject = document.getElementById('subjectInput').value
+    const name = document.getElementById("nameInput").value;
+    const email = document.getElementById("emailInput").value;
+    const message = document.getElementById("messageInput").value;
+
+    const mailLink =
+    `mailto:nizampnizam7@gmail.com?subject=${encodeURIComponent(subject)}&body=` +
+    `Name: ${name}%0AEmail: ${email}%0AMessage: ${message}`;
+
+  window.location.href = mailLink;
+})
