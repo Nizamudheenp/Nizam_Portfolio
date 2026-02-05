@@ -1,3 +1,4 @@
+emailjs.init("RhXmYBM1XQ0Wx4L-r");  
 document.addEventListener('DOMContentLoaded', () => {
     if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
         document.documentElement.classList.add('dark')
@@ -37,18 +38,28 @@ window.addEventListener('scroll', () => {
     }
 })
 
-document.getElementById('contactForm').addEventListener('submit', function (e) {
+ 
 
-    e.preventDefault();
+document.getElementById("contactForm").addEventListener("submit", function (e) {
+  e.preventDefault();
 
-    const subject = document.getElementById('subjectInput').value
-    const name = document.getElementById("nameInput").value;
-    const email = document.getElementById("emailInput").value;
-    const message = document.getElementById("messageInput").value;
+  const subject = document.getElementById("subjectInput").value;
+  const name = document.getElementById("nameInput").value;
+  const email = document.getElementById("emailInput").value;
+  const message = document.getElementById("messageInput").value;
 
-    const mailLink =
-    `mailto:nizampnizam7@gmail.com?subject=${encodeURIComponent(subject)}&body=` +
-    `Name: ${name}%0AEmail: ${email}%0AMessage: ${message}`;
-
-  window.location.href = mailLink;
-})
+  emailjs.send("service_7kblftz", "template_evj4dl6", {
+    subject: subject,
+    name: name,
+    email: email,
+    message: message,
+  })
+  .then(() => {
+    alert("Message sent successfully!");
+    document.getElementById("contactForm").reset();
+  })
+  .catch(error => {
+    console.log("Error:", error);
+    alert("Failed to send message");
+  });
+});
